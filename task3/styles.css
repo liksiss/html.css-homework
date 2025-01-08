@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Цвет фона страницы */
+}
+
+container {
+    display: flex; /* Размещаем карточки в ряд */
+    justify-content: space-around; /* Распределяем карточки равномерно */
+    padding: 20px;
+    flex-wrap: wrap; /* Позволяем переносить карточки на новую строку при узком экране */
+}
+
+card {
+    background-color: white; /* Цвет фона карточки */
+    border: 1px solid #ddd; /* Рамка карточки */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для карточки */
+    padding: 20px; /* Отступ внутри карточки */
+    width: 200px; /* Фиксированная ширина карточки */
+    margin: 10px; /* Отступ между карточками */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+card img {
+    max-width: 100%; /* Изображение не выходит за пределы карточки */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+buy-button {
+    background-color: #4caf50; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Скругление углов кнопки */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    cursor: pointer; /* Курсор в виде указателя при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона кнопки */
+}
+
+buy-button:hover {
+    background-color: #45a049; /* Цвет кнопки при наведении */
+}
